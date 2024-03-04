@@ -10,7 +10,7 @@ RUN python3 -m venv ~/my_env/venv
 RUN source ~/my_env/venv/bin/activate
 
 # Install dependencies
-RUN pip install --no-cache-dir -q -r /tmp/requirements.txt
+RUN  ~/my_env/venv/bin pip install --no-cache-dir -q -r /tmp/requirements.txt
 
 # Add our code
 ADD ./webapp /opt/webapp/
